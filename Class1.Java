@@ -1,4 +1,4 @@
-package misc;
+	package misc;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -179,6 +179,10 @@ public class Graph_1 {
     		}
     		if(this.all_marked() == true) {
     			break;
+    		}
+    		if(order.size() == 0) {
+    			//no valid order
+    			return null;
     		}
     	}
     	
